@@ -484,7 +484,7 @@ namespace SisaDev.Proyectos
                     {
                         if (CExiste.IdSucursal.ToString() == "56A03C71-BF9B-48E1-ABE0-D32A95B5FBDB")
                         {
-                            double iva = double.Parse("0");
+                            double iva = Convert.ToDouble("0");
                             double tota = double.Parse(Monto) + iva;
                             CExiste.CostoCotizacion = decimal.Parse(tota.ToString());
                             if (DataControl.SaveChanges() > 0)

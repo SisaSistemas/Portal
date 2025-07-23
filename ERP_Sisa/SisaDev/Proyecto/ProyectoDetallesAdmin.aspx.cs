@@ -82,7 +82,6 @@ namespace SisaDev.Administracion
         [WebMethod]
         public static string CargarGrafica(string IdProyecto)
         {
-
             string empty = string.Empty;
             try
             {
@@ -91,7 +90,7 @@ namespace SisaDev.Administracion
             }
             catch (Exception ex)
             {
-                return Convert.ToString(Response.Write("Alert('Error: '" + ex.Message +"')"));
+                return $"Error: {ex.Message}";
             }
         }
 

@@ -2553,6 +2553,12 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="SQL\funciones.sql" />
+    <Content Include="SQL\procedures.sql" />
+    <Content Include="SQL\respaldo.sql" />
+    <Content Include="SQL\tabla.sql" />
+    <Content Include="SQL\tipos_tablas.sql" />
+    <Content Include="SQL\usuarios.sql" />
     <Content Include="Ventas\CotizacionesDetalles.aspx" />
     <Content Include="Ventas\frmSolicitudCotizacion.aspx" />
     <Content Include="Ventas\frmSolicitudesCotizaciones.aspx" />
@@ -4839,7 +4845,6 @@
   <ItemGroup>
     <Folder Include="Administracion\docs\" />
     <Folder Include="Administracion\Upload\" />
-    <Folder Include="App_Data\" />
     <Folder Include="Cliente\docs\" />
     <Folder Include="Compras\docs\" />
     <Folder Include="Correos\" />

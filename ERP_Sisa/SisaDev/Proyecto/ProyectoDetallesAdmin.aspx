@@ -3,7 +3,10 @@
 
 <asp:Content ID="header" ContentPlaceHolderID="head" runat="server">
     <script>
+        const agregarComentario = () => {
+            const proyectoComentario = document.getElementById('idPryectoComentario').textContent;
 
+        }
         function AgregarComentario(btn) {
 
             document.getElementById('idProyectoComentario').textContent = btn.value;
@@ -41,15 +44,9 @@
         }
 
         function verDocumentos(btn) {
-
             //document.getElementById('idProyectoComentario').textContent = btn.value;
-
             window.open("ProyectoTareas.aspx?id=" + btn.value);
         }
-
-        
-
-
     </script>
 </asp:Content>
 <asp:Content ID="body" ContentPlaceHolderID="MainContent" runat="server">
@@ -58,7 +55,6 @@
         <section class="wrapper">
             <div class="row">
                 <div class="col-lg-12">
-
                     <ol class="breadcrumb">
                         <li><i class="icon_folder-open"></i>Detalles</li>
                         <li><i class="icon_building"></i>Proyectos  </li>
